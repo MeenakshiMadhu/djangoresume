@@ -6,8 +6,8 @@ Hello! This is a simple Digital Resume website created using Django, HTML, and B
 
 ### 1. Clone the Repository
 ```bash
-git clone [your-repository-url]
-cd [repository-name]
+git clone https://github.com/MeenakshiMadhu/djangoresume.git
+cd djangoresume
 ```
 ### 2. Create and Activate a Virtual Environment
 On Windows:
@@ -24,7 +24,7 @@ On macOS/Linux:
 python -m venv venv
 
 # Activate virtual environment
-source venv/bin/activate
+source venv/Scripts/activate
 ```
 
 ### 3. Install Django
@@ -34,5 +34,11 @@ pip install django
 
 ### 4. Run the project
 ```bash
-python3
+python manage.py runserver
+```
+### 5. Open a browser and go to "localhost:8000"
+### 6. TO close
+Use CTRL+C command on the bash terminal. And exit command to close the virtualenv.
+```bash
+exit
 ```
