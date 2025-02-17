@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Meenakshi's Resume</title>
+</head>
+<body>
+    <div id="resume-block" style="display: flex; flex-direction: column; align-items: left; justify-content: center;">
+        <div class="resume-section" id="header">
+            <h1>Meenakshi Madhu</h1>
+            <p>Software Developer <br> Brooklyn, New York</p>
+            <a class="btn btn-primary download" href="https://drive.google.com/file/d/19C1wlEQZ1W4K3DS_Plamlii7POrisIdo/view?usp=drive_link" download="Meenakshi_Resume">Download Resume</a>
+            <div style="display: flex; flex-direction: column; margin: 3%;">
+                <div class="links d-flex flex-md-row flex-column btn-group">
+                    <div class="flip-card btn">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Contact</div>
+                            <div class="flip-card-back">+1 (646) 875 6396</div>
+                        </div>
+                    </div>
+                    <div class="flip-card btn">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Email</div>
+                            <div class="flip-card-back">meenakshimadhu00@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="links d-flex flex-md-row flex-column btn-group">
+                    <a class="link-item btn" href="https://www.linkedin.com/in/meenakshi-madhu/">Linkedin</a>
+                    <a class="link-item btn" href="https://github.com/MeenakshiMadhu">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="resume-section" id="education">
+            <h3>Education</h3>
+            <hr>
+            <div class="resume-subsection">
+                <div class="subsection-line bold">
+                    <div>New York University</div>
+                    <div>May 2026</div>
+                </div>
+                <div class="subsection-line it">
+                    <div>Master of Science in Computer Science</div>
+                    <div>CGPA: 3.89</div>
+                </div>
+            </div>
+            <div class="resume-subsection">
+                <div class="subsection-line bold">
+                    <div>National Institute of Technology Calicut</div>
+                    <div>May 2022</div>
+                </div>
+                <div class="subsection-line it">
+                    <div>Bachelor of Technology in Computer Science and Engineering</div>
+                    <div>CGPA: 8.34/10</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section" id="experience">
+            <h3>Experience</h3>
+            <hr>
+            <div class="resume-subsection">
+                <div class="subsection-line bold">
+                    <div>Citicorp Services India Private Limited (Citi India)</div>
+                    <div>July 2022 - July 2024</div>
+                </div>
+                <div class="subsection-line it">
+                    <div>Software Developer (Technology Analyst)</div>
+                    <div>Chennai, India</div>
+                </div>               
+                <div id="details">
+                    <ul>
+                        <li>Contributed to the migration of Citi Connect for Files - a Spark Big Data Platform from Ab-Initio legacy flow to Spark Standalone, enhancing data processing efficiency by 25%.</li>
+                        <li>Optimized the payment file parsing logic for non-XML file formats, by utilising Spark’s parallel processing capabilities with Java, achieving significant reduction in file processing times compared to Ab-Initio’s sequential method.</li>
+                        <li>Developed mainframe applications for core credit management and Advanced Corporate Reporting functionalities using COBOL, JCL, and DB2 for the Citi Commercial Cards team, improving data handling and reporting efficiency.</li>
+                        <li>Migrated 6+ legacy Measurement Layer Interfaces (MLIs) to RESTful APIs with end-to-end testing to ensure complete functionality, utilizing Citi’s mainframe tools including IBM ChangeMan, File-Aid, TSO, ISPF, and Z/OS developer IDE.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-subsection">
+                <div class="subsection-line bold">
+                    <div>Citicorp Services India Private Limited (Citi India)</div>
+                    <div>May 2021 - July 2021</div>
+                </div>
+                <div class="subsection-line it">
+                    <div>Technology Summer Analyst Intern</div>
+                    <div>Remote</div>
+                </div>               
+                <div id="details">
+                    <ul>
+                        <li>
+                            Designed and implemented microservices with an interactive front-end dashboard using Java Spring framework, HTML and CSS Bootstrap to support DevOps health checks, enhancing system monitoring for the Citi Commercial Cards team.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-subsection">
+                <div class="subsection-line bold">
+                    <div>Pattarai LICET – Onfluence Ltd.</div>
+                    <div>November 2020 - August 2021</div>
+                </div>
+                <div class="subsection-line it">
+                    <div>Backend Development Intern</div>
+                    <div>Remote</div>
+                </div>               
+                <div id="details">
+                    <ul>
+                        <li>
+                            Created the backend system for an optimized online booking platform for an assisted stretching studio, using Python Flask framework and MySQL, that reduced query response times by 90%.
+                        </li>
+                        <li>
+                            Enhanced customer satisfaction for each booking interaction by implementing user-friendly features, which increased total sales by approximately 30%.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section" id="skills">
+            <h3>Skills</h3>
+            <hr>
+            <div class="resume-subsection">
+                <div><span class="bold">Languages:</span> Python, Java, C, C++, PHP, SQL, JavaScript, HTML5, CSS.</div>
+                <div><span class="bold">Technologies/Frameworks:</span> Java Spring Boot, Flask, Flutter, React, Linux, GitHub, JUnit, Scikit-learn, Pandas, NumPy</div>
+                <div><span class="bold">Developer Tools:</span> Hadoop, Spark, Git, Docker, JIRA, Bitbucket, Unix, Agile methodologies</div>
+            </div>
+        </div>
+        
+        <div class="resume-section" id="projects">
+            <h3>Projects</h3>
+            <hr>
+            <div class="resume-subsection">
+                <div>
+                    <span class="bold">PCOS Detection using Machine Learning Models</span> | Python
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            Developed and optimized machine learning models for early detection of PCOS, achieving an accuracy of up to 87.9% by leveraging feature selection techniques and hyperparameter tuning.
+                        </li>
+                        <li>
+                            Pre processed data and engineered features using Python, Scikit-learn, and XGBoost, improving classification performance and interpretability.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-subsection">
+                <div>
+                    <span class="bold">Collaborative Access Control Mechanism to Secure Sensitive Entities</span> | Python
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Designed and developed a secure access control mechanism using Python, that integrates Attribute-Based Encryption and Quick Response (QR) codes to facilitate convenient multi-user access control for safeguarding sensitive data.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-subsection">
+                <div>
+                    <span class="bold">Experimental Operating System (ExpOS) NITC</span> | Unix shell, SPL
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Built an experimental operating system (eXpOS) from the ground up, with file and memory management, and console input and output that runs on a machine simulator XSM, using SPL, EXPL and Assembly Language.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resume-section" id="extracurriculars">
+            <h3>Leadership/Extracurriculars</h3>
+            <hr>
+            <div class="resume-subsection">
+                <div><span class="bold"> Google Developer Group, Society of Women Engineers, Girls Who Code</span> | NYU Tandon</div>
+                <div><span class="bold">IEEE Computer Society</span> | NITC | Joint Secretary, Women in Computing coordinator</div>
+                <div><span class="bold">Computer Science and Engineering Association (CSEA)</span> | NITC | Treasurer</div>
+            </div>
+        </div>
+
+        <div class="resume-section" id="contact">
+            <h3 style="text-align: center;">Contact</h3>
+            <hr>
+            <div class="resume-subsection d-flex flex-column">
+                <div class="flip-card btn">
+                    <div class="flip-card-inner contact">
+                        <div class="flip-card-front">Mobile</div>
+                        <div class="flip-card-back">+1 (646) 875 6396</div>
+                    </div>
+                </div>
+                <div class="flip-card btn">
+                    <div class="flip-card-inner contact">
+                        <div class="flip-card-front">Email</div>
+                        <div class="flip-card-back">meenakshimadhu00@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2025 Meenakshi Madhu. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

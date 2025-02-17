@@ -1,0 +1,146 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #01042b;
+    color: rgb(213, 213, 199);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.it {
+    font-style: italic;
+}
+
+#header {
+
+    /* background-color: aquamarine; */
+    /* border-color: blueviolet; */
+    /* border-style: dotted; */
+
+    text-align: center;
+}
+
+
+#resume-block {
+    /* background-color: antiquewhite; */
+    /* border-color: blueviolet; */
+    /* border-style: dotted; */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.links {
+    /* border-color: blue; */
+    /* border-style: dotted; */
+    display:flex;
+    flex-direction: row;
+    /* margin-top: 3%;
+    margin-bottom: 3%; */
+}
+
+.resume-section {
+    /* border-color: blue; */
+    /* border-style: dotted; */
+
+    display: block;
+}
+
+.subsection-line {
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-between
+}
+
+.resume-subsection {
+    margin: 2%;
+    margin-bottom: 6px;
+}
+
+h3 {
+    margin-top: 3%;
+}
+
+.flip-card {
+    background-color: transparent;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    padding: 3%;
+    color: #d5d5c7;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; 
+    padding-bottom: 7%;
+    /* color: #d5d5c7; */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover {
+    background-color: #d5d5c7;
+    color:#151849;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* -webkit-backface-visibility: hidden;  */
+    backface-visibility: hidden;
+  }
+
+.flip-card-back {
+    transform: rotateY(180deg);
+} 
+
+.link-item {
+    padding: 3%;
+    text-decoration: none;
+    /* width: 50%; */
+    color: #d5d5c7;
+}
+
+.link-item:hover {
+    background-color: #d5d5c7;
+    color:#151849;
+}
+
+.download {
+    background-color: #d5d5c7;
+    color: #01042b;
+    border-color: transparent;
+}
+
+.download:hover {
+    background-color: black;
+    color: beige;
+    border-color: transparent;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.contact {
+    padding-bottom: 3% ;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
